@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Photo-Enhancer</title>
+</head>
+<body>
+    
+    <div class="buttons">
+        <button id="startButton">Click</button>
+        <button id="stopButton">Stop</button>
+        <button id="captureButton">Capture</button>
+        <button id="uploadButton">Upload</button>
+        <button id="enhanceButton">Enhance</button>
+        <button id="resetButton">Reset</button>
+        <button id="deleteButton">Delete</button>
+        <button id="downloadButton">Download</button>
+      </div>
+      <div class="editingarea">
+        <div class="div container">
+          <video id="videoElement" autoplay></video>
+          <span id="modeToggle">🌙</span>
+        </div>
+  
+        <div class="editing">
+          <div id="capturedImages"></div>
+          <canvas id="canvas" style="display: none"></canvas>
+          <input
+            id="fileInput"
+            type="file"
+            accept="image/*"
+            style="display: none"
+          />
+        </div>
+      </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
