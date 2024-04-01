@@ -92,7 +92,7 @@ const video = document.getElementById("videoElement");
             img.onload = function () {
               // Resize the image to have a fixed width of 300px and auto height
               const aspectRatio = img.width / img.height;
-              const newWidth = 300;
+              const newWidth = 200;
               const newHeight = newWidth / aspectRatio;
               img.width = newWidth;
               img.height = newHeight;
